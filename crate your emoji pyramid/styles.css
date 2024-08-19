@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#000000,#001624, #0E334A );
+    color: white;
+}
+
+.contener {
+    width: 80%;
+    max-width: 80%;
+    margin: 20px auto;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(#0066A4, #00273E);
+}
+
+.wallcam-text {
+    padding: 1rem;
+    border-bottom: 5px solid #000000;
+   width: 100%;
+    /* display none for wellcome in the second page */
+}
+
+.wallcam-text h1 {
+    font-family: sans-serif;
+    color: rgba(183, 255, 224, 1);
+    font-size: 2.5rem;
+   
+}
+
+.text {
+    padding: 3rem;
+}
+
+.text h2 {
+    font-family: sans-serif;
+    color: rgba(183, 255, 224, 1);
+    font-size: 2.4rem;
+    
+}
+
+
+
+.radio-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+    display: none;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    user-select: none;
+    background-color: #011421;
+}
+
+.radio-label:hover {
+    background-color: #e0e0e0;
+}
+
+.radio-input {
+    display: none;
+}
+
+.radio-input:checked + .radio-label {
+    background-color: #B7FFE0;
+    color: #011421;
+    border-color: #B7FFE0;
+}
+/* input number to add how mach emoji list*/
+  input{
+    padding: 20px;
+    width: 25rem;
+    height: 3rem;
+    border-radius: 15px;
+    border: none;
+    background: #052030;
+    color: white;
+    display: none;
+  }
+.button{
+    margin: 20px auto;
+    width: 12rem;
+    height: 3.5rem;
+    border-radius: 10px;
+    background: #01131f;
+    color: #B7FFE0;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+   
+}
+.button:hover{
+    transform: scale(1.2);
+    background: white;
+    color: black;
+}
+/* list imoji to the end of the page*/
+ span{
+    margin: 0;
+    display: block;
+    margin-top: -5rem;
+    font-size: 2rem;
+}
+@media (max-width: 1304px) {
+    .radio-container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 10px;
+        justify-items: center;
+        margin-bottom: 20px;
+        display: none;
+    }
+
+    
+}
+@media (max-width: 693px) {
+    .radio-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        justify-items: center;
+        margin-bottom: 20px;
+        display: none;
+    }
+    .title h1{
+        font-size: 1rem;
+    }
+
+    
+}
